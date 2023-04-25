@@ -7,6 +7,7 @@ const changeMyNumber = function(num) {
 };
 
 const myNum = 5;
+myNum = 15;
 
 console.log('before', myNum); // 5
 changeMyNumber(myNum);
@@ -17,6 +18,10 @@ const changeMyObj = function(obj) {
   console.log('inside the function', obj); // { username: 'Bob' }
 };
 
+const nums = [];
+nums.push(1);
+nums.pop();
+
 const myObj = {
   age: 42,
   password: '1234',
@@ -26,4 +31,3 @@ const myObj = {
 console.log('before', myObj); // { username: 'Alice' }
 changeMyObj(myObj);
 console.log('after', myObj); // 'Alice' or 'Bob'
-
