@@ -1,0 +1,20 @@
+{
+  "name": "better-name",
+  "version": "1.2.3",
+  "description": "Lecture notes and example code for TDD lecture",
+  "main": "sayHello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "testing",
+    "require",
+    "exports",
+    "fun"
+  ],
+  "author": "Andy Lindsay",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}
