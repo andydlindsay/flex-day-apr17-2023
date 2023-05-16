@@ -5,54 +5,46 @@
 - [x] TCP introduction
 - [x] TCP demo
 
-### Networking
-* machines connected together
-* every machine can talk to every other machine
+### What is networking?
+- Communication between machines on a network
 
-* servers have information
-* client wants information
+### What is a protocol?
+- A defined standard for how requests and responses are sent between network devices
 
-### Internet Protocol (IP)
-* IP address (street number)
-  * IPv4 192.168.8.8 127.0.0.1
-  * IPv6 2001:db8:3333:4444:5555:6666:7777:8888
+### The OSI Model
+- **O**pen **S**ystems **I**nterconnection Model developed by the International Organization for Standardization (ISO)
+- Conceptual model of how data is transmitted over a network
 
-### Ports
-* a port specify one particular app/server (apt number)
-* 65,535 ports to choose from
+1. **Physical** - physical pieces of hardware
+2. **Datalink** - how the physical device is connect to the network
+3. **Network** - communication between devices over the network
+4. **Transport** - splits up the network communication into ports (~65000 of them)
+5. **Session** - establishes a session between two connected devices
+6. **Presentation** - data translation layer (encryption and decryption)
+7. **Application** - the application (client or server)
 
-### DNS Domain Name Service
-* convert domain names into ip addresses
+### TCP/IP Model
+1. **Network Access** - physical devices and how they connect to the network
+2. **Internetwork** - communication between devices on the network
+3. **Transport** - splits up the network communication into ports
+4. **Application** - clients and servers/applications and services/sessions and encryption
 
-### Packets
-* broken down into packets
+### Transport Layer Protocols
+- Break data into packets to be sent over the network layer
+- Give each packet a header with origin and destination
+- **UDP**: **U**ser **D**atagram **P**rotocol
+  - Smaller header size (8 bytes) which results in smaller packet sizes
+  - _Connectionless_ ie. there is no need to establish or maintain a connection
+  - No error recovery (any corrupted packets are discarded)
+  - Packets can arrive in any order
+  - Useful for streaming/low latency applications
+- **TCP**: **T**ransportation **C**ontrol **P**rotocol
+  - Larger header size (20 bytes)
+  - Requires a connection (3-way handshake)
+  - Corrupted packets are reported to the server and are re-sent
+  - Packets arrive in order
+  - Useful when guaranteed communication is needed
 
-### User Datagram Protocol (UDP)
-* smaller header sizes
-* connectionless
-* no error recovery
-* packets can arrive in any order
-
-### Transport Control Protocol (TCP)
-* larger header size
-* connection (must have) 3 way handshake
-* any missing packets are resent
-* packets are reordered on arrival
-
-### Event-driven programming
-* register event handlers (aka functions) to run when/if an event occurs
-
-```js
-socket.write('Move: up');
-socket.write('Move: right');
-```
-
-
-
-
-
-
-
-
-
-
+### Useful Links
+* [OSI Model](https://en.wikipedia.org/wiki/OSI_model)
+* [Net package documentation](https://nodejs.org/api/net.html)
