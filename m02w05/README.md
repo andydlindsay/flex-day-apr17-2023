@@ -11,24 +11,6 @@
 ### What is a protocol?
 - A defined standard for how requests and responses are sent between network devices
 
-### The OSI Model
-- **O**pen **S**ystems **I**nterconnection Model developed by the International Organization for Standardization (ISO)
-- Conceptual model of how data is transmitted over a network
-
-1. **Physical** - physical pieces of hardware
-2. **Datalink** - how the physical device is connect to the network
-3. **Network** - communication between devices over the network
-4. **Transport** - splits up the network communication into ports (~65000 of them)
-5. **Session** - establishes a session between two connected devices
-6. **Presentation** - data translation layer (encryption and decryption)
-7. **Application** - the application (client or server)
-
-### TCP/IP Model
-1. **Network Access** - physical devices and how they connect to the network
-2. **Internetwork** - communication between devices on the network
-3. **Transport** - splits up the network communication into ports
-4. **Application** - clients and servers/applications and services/sessions and encryption
-
 ### Transport Layer Protocols
 - Break data into packets to be sent over the network layer
 - Give each packet a header with origin and destination
