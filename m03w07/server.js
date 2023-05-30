@@ -128,7 +128,7 @@ app.post('/register', (req, res) => {
     }
   }
 
-  // did we NOT find a user
+  // did we find a user
   if (foundUser) {
     return res.status(400).send('a user with that username already exists');
   }
