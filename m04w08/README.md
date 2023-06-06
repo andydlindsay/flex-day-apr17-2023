@@ -3,7 +3,6 @@
 ### To Do
 * [ ] Demo this week's project
 * [ ] Semantic Tags
-* [ ] Attributes
 * [ ] Intro to CSS
 * [ ] Inline styles
 * [ ] Style element
