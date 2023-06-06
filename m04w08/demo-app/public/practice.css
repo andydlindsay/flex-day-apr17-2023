@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p#main-content {
+  font-size: 34px;
+  color: yellowgreen;
+  text-decoration: underline;
+  border: 2px solid palegoldenrod;
+  padding: 20px;
+}
+
+div.something-else, p.content, div.more-stuff {
+  color: brown;
+  text-decoration: overline;
+}
+
+p#header {
+  color: blue;
+  margin: 10px;
+}
+
+p {
+  color: green;
+}
+
+/* p.content {}
+
+p#main {}
+
+p#main.content {}
+
+p {}
+
+div.content p {} */
