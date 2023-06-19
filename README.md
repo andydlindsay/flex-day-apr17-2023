@@ -6,3 +6,5 @@
 * [M03W06 - Web Servers 101](/m03w06)
 * [M03W07 - HTTP Cookies & User Authentication](/m03w07)
 * [M04W08 - Intro to CSS](/m04w08)
+* [M04W10 - Responsive Design and SASS](/m04w10-1)
+ 
