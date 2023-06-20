@@ -1,0 +1,50 @@
+@import '_variables';
+
+body {
+  color: $primary;
+  background-color: green;
+  border: $border;
+  display: $flex;
+  text-decoration: $underline;
+}
+
+div {
+  font-size: 24px;
+
+  p {
+    color: hotpink;
+  }
+
+  article {
+    text-decoration: underline;
+
+    h2 {
+      font-weight: bold;
+    }
+  }
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.custom-heading {
+  @extend .heading;
+  text-decoration: overline;
+}
+
+@mixin box ($num, $color) {
+  width: $num * 50px;
+  height: $num * 50px;
+  border-color: $color;
+}
+
+.small-box {
+  @include box(1, hotpink);
+}
+
+.med-box {
+  @include box(2, yellowgreen);
+}
+
