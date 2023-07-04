@@ -8,4 +8,3 @@
 * [M04W08 - Intro to CSS](/m04w08)
 * [M04W10 - Responsive Design and SASS](/m04w10-1)
 * [M05W12 - SQL from our Apps](/m05w12-1)
- 
