@@ -8,46 +8,35 @@
 - [x] Props
 - [x] State
 - [x] Event Handlers
-<!-- - [ ] Controlled Inputs -->
 
-### What is React?
-* a library for creating user interfaces (React-DOM, React-Native, React Ink)
-* declarative - specify what we want to see, not how it's implemented
-* component-based - divide up the UI into smaller pieces (reusable)
+### React
+- From the landing page of [React](https://react.dev/):
+  > A JavaScript library for building user interfaces
+- Open source project maintained by Facebook
+- React is built around the concept of managing data
+  - Changes to the underlying data result in changes to the UI
+  - In React, state === data
+- Component-based: UI is composed of small pieces
+- Declarative: We describe the final outcome of our code and not the step-by-step process to achieve that result
 
+### Components
+- Components are the building blocks of a webpage (eg. search input, navigation bar, contact us form)
+- Ideally, components should be reusable (which means that their state should be passed into them via props rather than maintaining their own state)
+- Deciding which DOM elements become components and which don't is a skill that comes with practice and experience
+- We will be building all of our components using functions
+- The functions return value contains a mixture of HTML and JS; React calls this `JSX`
 
-* CommonJS Syntax (CJS) => exclusive to Node
-  * module.exports
-    * module.exports.myVar = 'hello';
-    * module.exports = Header;
-  * require
-* ECMAScript Modules (ESM) => modern JS
-  * export => exporting a key
-    * export const myVar = 'hello';
-  * export default => the main export from the file
-    * export default Header
-  * import
+```jsx
+// basic component
+import React from "react";
 
-* props => data from outside the component/function
-* state => data that belongs to a component/function
+const MyComponent = () => {
+  return (
+    <div className="my-component">
+      <h1>Hello World</h1>
+    </div>
+  );
+};
 
-
-### Hook
-* helper function that interacts with React
-* useState
-
-* const arr = useState(initialValue)
-* const getter = arr[0]
-* const setter = arr[1]
-
-* oldValues vs newValues
-* count = 0 vs count = 1 => re-render
-
-* render => React calls your function and gets back the return value
-
-
-
-
-
-
-
+export default MyComponent;
+```
