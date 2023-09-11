@@ -7,7 +7,7 @@
 * [ ] Loops
 * [ ] Methods
 * [ ] Hashes
-* [ ] Blocks and Lambdas
+* [ ] Blocks and Procs
 * [ ] Classes
 
 
