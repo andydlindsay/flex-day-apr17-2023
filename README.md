@@ -13,3 +13,4 @@
 * [M07W17 - State Management and Immutable Update Patterns](/m07w17-1)
 * [M09W22 - Intro to Ruby](/m09w22-1)
 * [M09W23 - Project Planning](/m09w23-1)
+* [M09W24 - Rails Review](/m09w24-1)
