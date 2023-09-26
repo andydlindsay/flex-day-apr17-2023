@@ -1,0 +1,11 @@
+<h1>All the locations!</h1>
+
+<a href="/characters">Characters</a>
+<%= link_to "Characters", "/characters" %>
+<%= link_to "Characters", characters_path %>
+
+<% @locations.each do |location| %>
+  <div class="location">
+    <h2>Name: <%= location.name %></h2>
+  </div>
+<% end %>
