@@ -14,3 +14,4 @@
 * [M09W22 - Intro to Ruby](/m09w22-1)
 * [M09W23 - Project Planning](/m09w23-1)
 * [M09W24 - Rails Review](/m09w24-1)
+* [M09W26 - Intro to TypeScript](/m09w26-1)
